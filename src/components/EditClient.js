@@ -18,7 +18,7 @@ const EditClient = () => {
         const session = await fetchAuthSession();
 
         const response = await axios.get(
-          `https://iw30sqk3a0.execute-api.us-east-1.amazonaws.com/dev/clients/${clientId}`,
+          `https://[ID_PLACEHOLDER].execute-api.us-east-1.amazonaws.com/dev/clients/${clientId}`,
           {
             headers: { Authorization: `Bearer ${session.tokens.accessToken}` },
           }

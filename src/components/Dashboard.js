@@ -14,7 +14,7 @@ const Dashboard = () => {
         const session = await fetchAuthSession();
 
         const response = await axios.get(
-          "https://iw30sqk3a0.execute-api.us-east-1.amazonaws.com/dev/clients",
+          "https://[ID_PLACEHOLDER].execute-api.us-east-1.amazonaws.com/dev/clients",
           {
             headers: {
               Authorization: `Bearer ${session.tokens.accessToken}`,
@@ -41,7 +41,7 @@ const Dashboard = () => {
       const session = await fetchAuthSession();
 
       await axios.delete(
-        `https://iw30sqk3a0.execute-api.us-east-1.amazonaws.com/dev/clients/${clientId}`,
+        `https://[ID_PLACEHOLDER].execute-api.us-east-1.amazonaws.com/dev/clients/${clientId}`,
         {
           headers: {
             Authorization: `Bearer ${session.tokens.accessToken}`,
